@@ -1,0 +1,387 @@
+body{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#topMain{
+    background-color: rgb(35, 75, 100);
+    width: 100%;
+    height: 200px;
+    display: grid;
+    grid-template-areas: ". dost nomer nomer logo logo tovar but . ."   
+                       ". pizza burger zakuski napitki soys dostavka kontakt . .";
+   grid-template-columns: repeat(10, 1fr); 
+   grid-template-rows: repeat(2, 100px);
+   font-weight: 500;
+}
+#listMain{
+    display: grid;
+    width: 100%;
+}
+#footer{
+    background-color: rgb(35, 75, 100);
+    width: 100%;
+    height: 200px;
+    display: grid;
+}
+
+#dost{
+    grid-area: dost;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: -60px;
+}
+#nomer{
+    grid-area: nomer;
+    color: rgb(255,162,0);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+#logo{
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 40px;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+#bak{
+    height: 30%;
+}
+#tovar{
+    grid-area: tovar;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: -35px;
+}
+#but{
+    height: 40px;
+    width: 130px;
+    border: none;
+    background-color: rgb(255,162,0);
+    color:white ;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: 500;
+    margin-bottom: -5px;
+}
+#but:hover{
+    border: 1px solid white;
+
+}
+#button{
+    grid-area: but;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: -50px;
+}
+#pizza{
+    grid-area: pizza;
+}
+#burger{
+    grid-area: burger;
+}
+
+#zakuski{
+    grid-area: zakuski;
+}
+#napitki{
+    grid-area: napitki;
+}
+#soys{
+    grid-area: soys;
+}
+#dostavka{
+    grid-area: dostavka;
+    justify-content: flex-end!important;
+    margin-right: -40px;
+}
+#kontakt{
+    grid-area: kontakt;
+    margin-right: -20px;
+    
+    
+}
+.topMenu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+
+.topMenu:hover{
+    color: rgb(255,162,0);
+}
+
+#banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    width: 70%;
+    margin-left: 15%;
+}
+#text1{
+    
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    height: max-content;
+    color: rgb(255,162,0);
+    font-weight: 900;
+    font-size: 1.8em;
+    margin-left: 15%;
+    line-height: 130%;
+}
+#text2{
+    
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    height: max-content;
+    color: rgb(35, 75, 100);
+    font-weight: 600;
+    font-size: 1em;
+    margin-left: 15%;
+    line-height: 150%;
+}
+#text3{ 
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: 30px;
+    height: max-content;
+    color: rgb(255,162,0);
+    font-weight: 900;
+    font-size: 1.8em;
+    margin-left: 35%;
+    line-height: 130%;
+    text-align: right;
+}
+
+#catalogWrap{
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    height: max-content;
+    margin-left: 15%;
+    
+}
+.text11{    
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    height: max-content;
+    color: rgb(255,162,0);
+    font-weight: 900;
+    font-size: 1.8em;
+    margin-left: 30px;
+    line-height: 130%;
+    margin-bottom: 30px;
+}
+#catalog{
+    width: 100%;
+    display: grid;
+    grid-template-areas: "tovar1 tovar2";
+   grid-template-columns: repeat(2, 1fr); 
+   grid-template-rows: repeat(1, 500px);
+}
+#catalog2{
+    width: 100%;
+    display: grid;
+    grid-template-areas: "tovar3 tovar4";
+   grid-template-columns: repeat(2, 1fr); 
+   grid-template-rows: repeat(1, 500px);
+}
+#tovar1{
+    grid-area: tovar1;
+}
+#tovar2{
+    grid-area: tovar2;
+}
+#tovar3{
+    grid-area: tovar3;
+}
+#tovar4{
+    grid-area: tovar4;
+}
+.tovar{
+    background: linear-gradient(to bottom, rgb(255,162,0) 50%, rgb(35, 75, 100) 50%);
+    border-radius: 15px;
+    width: 90%;
+    margin: 1% 5% 1% 5%;
+    height: 500px;
+    display: grid;
+    grid-template-areas: "new ."
+                        "img img"
+                        "title title"
+                        "size size"
+                        "sostav sostav"
+                        "price butbut";
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows:  10% 25% 10% 10% 15% 30%;
+}
+.topStik{
+    grid-area: new;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: rgb(226, 3, 3);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 0.8em;
+}
+.img{
+    grid-area: img;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 40px;
+
+}
+.title{
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-weight: 600;
+}
+.stikSize{
+    grid-area: size;
+    display: flex;
+    justify-content: center;
+}
+.stikSize button{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 13px;
+    border: none;
+    background-color: white;
+    line-height: 90%;
+    font-weight: 600;
+    color: rgb(255,162,0);
+    margin-left: 11px;
+    margin-right: 11px;
+    margin-top: 5px;
+    cursor: pointer;
+    
+}
+.stikSize button:hover{
+    border: 1px solid white;
+    background-color: rgb(255,162,0);
+    color:white ;
+    cursor: pointer;
+    
+}
+
+.sostav{
+    grid-area: sostav;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.9em;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 10px;
+}
+.price{
+    grid-area: price;
+    font-weight: 900;
+    font-size: 2em;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 60px;
+}
+.butbut{
+    grid-area: butbut;
+    font-weight: 900;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 60px;
+}
+.butbut button{
+    height: 40px;
+    width: 130px;
+    border: none;
+    background-color: rgb(255,162,0);
+    color:white ;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: 500;
+
+}
+
+.butbut button:hover{
+    border: 1px solid white;
+
+}
+
+#bottomMain{
+    background-color: rgb(35, 75, 100);
+    margin-top: 100px;
+    width: 100%;
+    height: 250px;
+    display: grid;
+    grid-template-areas: "foot1 foot2 foot3"   
+                       "foot1 foot2 foot3";
+   grid-template-columns: repeat(3, 1fr); 
+   grid-template-rows: repeat(1, 100px);
+   font-weight: 500;
+}
+#foot1{
+    grid-area: foot1;
+    padding-top: 8%;
+}
+#foot1 a{    
+    margin-left: 53%;   
+}
+#foot2{
+    grid-area: foot2;
+    padding-top: 8%;
+}
+#foot1 a{    
+    margin-left: 53%;   
+}
+#foot3{
+    grid-area: foot3;
+    padding-top: 8%;
+}
+#bottomMain a:hover{
+    transition: 0.7s;
+    padding-left: 25px;
+}
+#korzina{
+    display: none;
+    position: fixed;
+    top: 60px;
+    right: 40px;
+
+}

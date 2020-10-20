@@ -1,0 +1,152 @@
+
+#catalogWrap{
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    height: max-content;
+    margin-left: 15%;
+    
+}
+.text11{    
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    height: max-content;
+    color: rgb(255,162,0);
+    font-weight: 900;
+    font-size: 1.8em;
+    margin-left: 30px;
+    line-height: 130%;
+    margin-bottom: 30px;
+}
+#catalog{
+    width: 100%;
+    display: grid;
+    grid-template-areas: "tovar1 tovar2";
+   grid-template-columns: repeat(2, 1fr); 
+   grid-template-rows: repeat(1, 500px);
+}
+#catalogPac2{
+    width: 100%;
+    display: grid;
+    grid-template-areas: "tovar33 tovar44"
+                        "tovar55 tovar66";
+   grid-template-columns: repeat(2, 1fr); 
+   grid-template-rows: repeat(2, 500px);
+}
+#tovar33{
+    grid-area: tovar33;
+}
+#tovar44{
+    grid-area: tovar44;
+}
+#tovar55{
+    grid-area: tovar55;
+    margin-top: 40px;
+}
+#tovar66{
+    grid-area: tovar66;
+    margin-top: 40px;
+}
+.tovar{
+    background: linear-gradient(to bottom, rgb(255,162,0) 50%, rgb(35, 75, 100) 50%);
+    border-radius: 15px;
+    width: 90%;
+    margin: 1% 5% 1% 5%;
+    height: 500px;
+    
+    display: grid;
+    grid-template-areas: "new ."
+                        "img img"
+                        "title title"
+                        "size size"
+                        "sostav sostav"
+                        "price butbut";
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows:  10% 25% 10% 10% 15% 30%;
+}
+.topStik{
+    grid-area: new;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: rgb(226, 3, 3);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 0.8em;
+}
+.img{
+    grid-area: img;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 40px;
+
+}
+.title{
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-weight: 600;
+}
+.stikSize{
+    grid-area: size;
+    display: flex;
+    justify-content: center;
+}
+.stikSize button{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 13px;
+    border: none;
+    background-color: white;
+    line-height: 90%;
+    font-weight: 600;
+    color: rgb(255,162,0);
+    margin-left: 11px;
+    margin-right: 11px;
+    margin-top: 5px;
+    cursor: pointer;
+    
+}
+.stikSize button:hover{
+    border: 1px solid white;
+    background-color: rgb(255,162,0);
+    color:white ;
+    cursor: pointer;
+    
+}
+
+.sostav{
+    grid-area: sostav;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.9em;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 10px;
+}
+.price{
+    grid-area: price;
+    font-weight: 900;
+    font-size: 2em;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 60px;
+}
+

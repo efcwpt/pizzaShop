@@ -1,0 +1,9 @@
+$(document).ready(function(){
+	$(window).scroll(function(){
+		if($(window).scrollTop()>120){
+			$('#korzina').fadeIn(900)
+		}else{
+			$('#korzina').fadeOut(700)
+		}
+	});
+});

@@ -1,0 +1,192 @@
+#catalogg{
+    width: 100%;
+    display: grid;
+    grid-template-areas: "tovar1 tovar2";
+   grid-template-columns: repeat(2, 1fr); 
+   grid-template-rows: repeat(3, 130px);
+}
+
+#tovar1{
+    grid-area: tovar1;
+}
+#tovar2{
+    grid-area: tovar2;
+}
+
+
+.tovarr{
+    background: linear-gradient(to left,rgb(35, 75, 100) 70%, rgb(255,162,0)  50%);
+    border-radius: 15px;
+    width: 90%;
+    margin: 1% 5% 1% 5%;
+    height: 130px;
+    display: grid;
+    grid-template-areas: 
+                        "img title"
+                        "img size"
+                        "img price";
+    grid-template-columns: 30% 70%; 
+    grid-template-rows:  50% 25% 25%;
+}
+.butbut{
+    grid-area: butbut;
+    font-weight: 900;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 60px;
+}
+.butbut button{
+    height: 40px;
+    width: 130px;
+    border: none;
+    background-color: rgb(255,162,0);
+    color:white ;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: 500;
+
+}
+
+.butbut button:hover{
+    border: 1px solid white;
+
+}
+.img{
+    grid-area: img;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.title{
+    grid-area: title;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-weight: 600;
+    margin-bottom: 35px;
+    margin-right: 135px;
+}
+
+.sizee{
+    grid-area: size;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.9em;
+    margin-left: 15px;
+
+
+}
+.pricee{
+    grid-area: price;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.9em;
+    margin-left: 15px;
+
+}
+
+.butbut{
+    grid-area: butbut;
+    font-weight: 900;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    margin-top: 60px;
+}
+.butbut button{
+    height: 40px;
+    width: 130px;
+    border: none;
+    background-color: rgb(255,162,0);
+    color:white ;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: 500;
+
+}
+#tovarrr{
+    background-color: rgb(35, 75, 100);
+    border-radius: 15px;
+    width: 90%;
+    height: 450px;
+    display: grid;
+    grid-template-areas: 
+                        "name name"
+                        "phone phone"
+                        "mail mail"
+                        "adress adress"
+                        "butt butt";
+    grid-template-columns: 50% 50%; 
+    grid-template-rows:  15% 15% 15% 15% 25%;
+    color: rgb(255,162,0);
+
+}
+#tovarrr label{
+   display: inline-block;
+   margin-left: 30px;
+   margin-top: 30px;
+
+  
+}
+#tovarrr input{
+    width: 90%;
+    height: 15px;
+    border-radius: 30px;
+    border: none;
+    color: rgb(255,162,0);
+    margin-left: 180px;
+    padding: 5px;
+    display: inline-block;
+    
+    
+    
+}
+#tovarrr input:hover{
+    cursor: text ;
+}
+#name{
+    grid-area: name;
+    margin-top: -70px;
+    
+    
+}
+#phone{
+    grid-area: phone;
+    margin-top: -30px;
+}
+#mail{
+    grid-area: mail;
+    margin-top: -30px;
+}
+#adress{
+    grid-area: adress;
+    margin-top: -30px;
+}
+#contrBut{
+        grid-area: butt;
+        height: 80px;
+        width: 200px;
+        border: none;
+        background-color: rgb(255,162,0);
+        color:white ;
+        border-radius: 70px;
+        font-weight: 500;
+        cursor: pointer;
+        margin-left: 26%;
+        margin-top: 30px;
+}
+
+/* НЕ РАБОТАЕТ!!!!
+.contrBut button:hover{
+    border: 1px solid white;
+    
+}
+*/
